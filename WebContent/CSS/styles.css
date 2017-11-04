@@ -1,0 +1,61 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  height: 121px;
+  width: 100vw;
+  background-color: #BA0C2F;
+}
+
+.content {
+  height: 74%;
+  width: 100vw;
+  background-color: #FFFFFF;
+  padding-top: 10%;
+}
+
+
+
+.loginBox{
+	text-align: center;
+	webkit border radius: 10px;
+	moz border radius: 10px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	width: 300px;
+	height: 350px;
+	background-color: #9EA2A2;
+}
+
+.loginBox p{
+	margin-top: 60%;
+	margin-bottom: 10px;
+	text-align: left;
+}
