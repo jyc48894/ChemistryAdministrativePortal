@@ -17,14 +17,14 @@
 	<div class="content">
 	
 		<div class="loginBox">
-			<form name="loginForm" action="loginHandler" method="post">
+			<form name="loginForm" action="LoginHandler" method="post">
 				<label for="email">email</label>
 				<br/>
 				<input type="text" name="email" required/>
 				<br/>
 				<label for="password">Password</label>
 				<br/>
-				<input type="password" name="username" required/>
+				<input type="password" name="password" required/>
 				<br />
 				<input type="submit" name="submitButton" value="Login"/>
 			</form>
