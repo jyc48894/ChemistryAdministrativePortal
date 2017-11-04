@@ -18,7 +18,7 @@
 	
 		<div class="loginBox">
 			<form name="loginForm" action="LoginHandler" method="post">
-				<label for="email">email</label>
+				<label for="email">Email</label>
 				<br/>
 				<input type="text" name="email" required/>
 				<br/>
