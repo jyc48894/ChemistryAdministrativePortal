@@ -17,17 +17,18 @@
 	<div class="content">
 	
 		<div class="loginBox">
-			<form name="loginForm" action="loginServlet" method="post">
-				<label for="username">Username:</label>
+			<form name="loginForm" action="loginHandler" method="post">
+				<label for="email">email</label>
 				<br/>
-				<input type="text" name="username" value="username"/>
+				<input type="text" name="email" required/>
 				<br/>
-				<label for="password">Password:</label>
+				<label for="password">Password</label>
 				<br/>
-				<input type="text" name="username" value="password"/>
+				<input type="password" name="username" required/>
 				<br />
 				<input type="submit" name="submitButton" value="Login"/>
 			</form>
+			${errorMessage}
 			<p>Trouble logging in? <a href="mailto:example@gmail.com">Contact</a> the web administrator</p>
 		</div>
 	
