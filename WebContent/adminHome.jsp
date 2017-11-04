@@ -12,6 +12,7 @@
 <div class="container">
   <div class="header">
   	<img src="IMG/ChemLogo.png">
+  	<div class="headerContent"><a href="accountManagement.jsp">Manage Account</a></div>
   </div>
   <div class="content">
     <div class="smallTableContainer">

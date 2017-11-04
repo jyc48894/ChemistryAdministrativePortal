@@ -31,8 +31,6 @@ time, mark, audio, video {
 }
 
 .content {
-  height: 74%;
-  width: 100vw;
   background-color: #FFFFFF;
   padding-top: 10%;
 }
