@@ -52,6 +52,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   justify-content: center;
 }
 
+#hoverEvent:hover {
+  background-color: #554F47;
+}
+
 .smallTable3 {
   height: 40vh;
   width: calc(100%/3);
@@ -67,3 +71,4 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   color: white;
   font-size: 1.75em;
 }
+

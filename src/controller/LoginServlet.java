@@ -52,9 +52,16 @@ public class LoginServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		
+		//For debugging purposes: TODO delete when confirmed passing of information
+		System.out.println("EMAIL" + email);
+		System.out.println("PASSWORD" + password);
+		
 		//Encrypt password
 		PasswordService pws = new PasswordService();
 		String encryptedPass = pws.encrypt(password);
+		
+		//For debugging purposes: TODO delete when confirmed passing of information
+		System.out.println(encryptedPass);
 		
 		//Create UserHelper to make database call, and call authenticate user method
 		UserHelper uh = new UserHelper();

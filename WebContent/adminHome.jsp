@@ -16,21 +16,21 @@
   <div class="content">
     <div class="smallTableContainer">
       <a href="CSAServlet">
-        <div class="smallTable1">
+        <div class="smallTable1" id="hoverEvent">
           <div class="smallTableContent">
             CSA
           </div>
         </div>
       </a>
       <a href="CoursesServlet">
-        <div class="smallTable2">
+        <div class="smallTable2" id="hoverEvent">
           <div class="smallTableContent">
             Courses
           </div>
         </div>
       </a>
       <a href="FacultyServlet">
-        <div class="smallTable3">
+        <div class="smallTable3" id="hoverEvent">
           <div class="smallTableContent">
             Faculty
           </div>
