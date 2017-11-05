@@ -66,7 +66,7 @@ public class ReadQuery {
 		 */
 		public String createHTMLTable() {
 			String table = "";
-			table += "<table>";
+			table += "<table id='table'>";
 			
 			//Abstracting loop for pulling column name headings
 			table += "<tr>";

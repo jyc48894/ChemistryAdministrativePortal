@@ -32,49 +32,41 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .content {
 	background-color: #FFFFFF;
 	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
 
-.smallTableContainer {
-	height: 40vh;
-	margin-left: 10vw;
-	margin-right: 10vw;
+.tableContent {
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 5vh;
 }
 
-.smallTable1 {
-	height: 40vh;
-	width: calc(100%/3);
-	background-color: #BA0C2F;
-	float: left;
-	display: flex;
-	justify-content: center;
+.tableContent a {
+	text-decoration: none;
 }
 
-.smallTable2 {
-	height: 40vh;
-	width: calc(100%/3);
-	background-color: #9EA2A2;
-	float: left;
-	display: flex;
-	justify-content: center;
+#table {
+	border-collapse: collapse;
+	width: 100%;
 }
 
-#hoverEvent:hover {
+#table td, #table th {
+	border: 1px solid #554F47;
+	padding: 8px;
+}
+
+#table tr:nth-child(even) {
+	background-color: #9EA2A2; 
+}
+
+#table tr:hover {
 	background-color: #554F47;
 }
 
-.smallTable3 {
-	height: 40vh;
-	width: calc(100%/3);
-	background-color: #BA0C2F;
-	float: left;
-	display: flex;
-	justify-content: center;
+#table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #BA0C2F; 
+	color: #FFFFFF;
 }
-
-.smallTableContent {
-	align-self: center;
-	padding: 1rem;
-	color: white;
-	font-size: 1.75em;
-}
-

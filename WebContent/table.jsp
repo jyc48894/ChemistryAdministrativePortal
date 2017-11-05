@@ -4,11 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="CSS/tablestyles.css">
 <title>Table View</title>
 </head>
 <body>
-
-<%= (String) request.getAttribute("table") %>
-
+<div class="container">
+	<div class="header">
+		<img src="IMG/ChemLogo.png">
+  		<div class="headerContent"><a href="accountManagement.jsp">Manage Account</a></div>
+	</div>
+	<div class="content">
+		<div class="tableContent">
+			<%= (String) request.getAttribute("table") %>
+		</div>
+	</div>
+</div>
 </body>
 </html>
