@@ -69,6 +69,7 @@ public class ReadQuery {
 			table += "<table id='table'>";
 			
 			//Abstracting loop for pulling column name headings
+			table += "<thead>";
 			table += "<tr>";
 			for(int i =1; i <= columnCount; i++) {
 				try {
@@ -82,8 +83,9 @@ public class ReadQuery {
 			table += "<th>Update Entry</th>";
 			table += "<th>Delete Entry</th>";
 			table += "</tr>";			
+			table += "</thead>";
 			
-			//TODO think really hard here about how to implement pagination. Research required
+			table += "<tbody>";
 			try {
 				while(results.next()) {
 					table += "<tr>";
@@ -100,7 +102,7 @@ public class ReadQuery {
 				e.printStackTrace();
 			}
 			
-			
+			table += "</tbody>";
 			table += "</table>";
 			//Think about how to pass parameters to send user to a correct add page
 			//try {

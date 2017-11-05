@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="CSS/tablestyles.css">
+
 <title>Table View</title>
 <link href="CSS/tableexport.css" rel="stylesheet">
 </head>
@@ -21,6 +22,14 @@
 	</div>
 </div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#table').DataTable( {
+        "pagingType": "simple"
+    } );
+} );
+</script>
 <script src="JS/FileSaver.min.js"></script>
 <script src="JS/xlsx.core.min.js"></script>
 <script src="JS/tableexport.js"></script>
