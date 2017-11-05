@@ -16,13 +16,13 @@ public class ReadQuery {
 		/**
 		 * 
 		 */
-		public ReadQuery(String uname, String pwd) {
+		public ReadQuery() {
 			String url = "jdbc:mysql://localhost:3306/chemistrydatabase";
 			
 			// set up the driver
 			try {
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
-				this.connection = DriverManager.getConnection(url, uname, pwd);
+				this.connection = DriverManager.getConnection(url, "root", "root");
 				
 			} catch (InstantiationException e) {
 				// TODO Auto-generated catch block
@@ -39,17 +39,18 @@ public class ReadQuery {
 			}
 		}
 
-		public void doRead(String table) {
-			String query = "select * from ?";
-			try {
-				PreparedStatement ps = this.connection.prepareStatement(query);
-				ps.setString(1, table);
-				this.results = ps.executeQuery();
-				rsmd = results.getMetaData();
-				columnCount = rsmd.getColumnCount();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		public void doRead(String tableName) {
+			if(tableName.equals("course_section_assignment") || tableName.equals("faculty") || tableName.equals("courses")) {
+				String query = "select * from " + tableName;
+				try {
+					PreparedStatement ps = this.connection.prepareStatement(query);
+					this.results = ps.executeQuery();
+					rsmd = results.getMetaData();
+					columnCount = rsmd.getColumnCount();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 		
