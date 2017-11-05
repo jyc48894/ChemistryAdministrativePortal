@@ -44,10 +44,8 @@ public class CSAServlet extends HttpServlet {
 		rq.doRead("course_section_assignment");
 		String table = rq.createHTMLTable();
 		
-		
-		
 		request.setAttribute("table", table);
-		String url = "/csa.jsp";
+		String url = "/table.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
