@@ -26,7 +26,7 @@ public class UserHelper {
 			//Set up connection
 			Class.forName("com.mysql.jdbc.Driver");
 			//CHECK HERE FOR CONNECTION PROBLEM
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/user", "root", "root");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/chemistrydatabase", "root", "root");
 			
 			//Create the preparedstatement(s)
 			authenticateUserStatement = conn.prepareStatement("select * from user where email=? and password=?");
