@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import dbHelpers.ReadQuery;
 
 /**
- * Servlet implementation class CSAServlet
+ * Servlet implementation class CourseServlet
  */
-@WebServlet("/CSAServlet")
-public class CSAServlet extends HttpServlet {
+@WebServlet("/CourseServlet")
+public class CourseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CSAServlet() {
+    public CourseServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,7 +32,6 @@ public class CSAServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doPost(request,response);
-		
 	}
 
 	/**
@@ -40,16 +39,18 @@ public class CSAServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
 		ReadQuery rq = new ReadQuery();
-		rq.doRead("course_section_assignments");
+		rq.doRead("courses");
 		String table = rq.createHTMLTable();
-		
+				
+				
+			
 		request.setAttribute("table", table);
 		String url = "/table.jsp";
-		
+				
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
-		
 	}
 
 }

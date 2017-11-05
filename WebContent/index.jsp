@@ -8,14 +8,11 @@
 <title>Chemistry Administrative Login</title>
 </head>
 <body>
-
 <div class="container">
 	<div class="header">
 	<img src="IMG/ChemLogo.png">
 	</div>
-
 	<div class="content">
-	
 		<div class="loginBox">
 			<form name="loginForm" action="LoginHandler" method="post">
 				<label for="email">Email</label>
@@ -31,9 +28,7 @@
 			${errorMessage}
 			<p>Trouble logging in? <a href="mailto:example@gmail.com">Contact</a> the web administrator</p>
 		</div>
-	
     </div>
-
 </div>
 
 

@@ -45,7 +45,7 @@ public class ReadQuery {
 		 * @param tableName
 		 */
 		public void doRead(String tableName) {
-			if(tableName.equals("course_section_assignment") || tableName.equals("faculty") || tableName.equals("courses")) {
+			if(tableName.equals("course_section_assignments") || tableName.equals("faculty") || tableName.equals("courses")) {
 				String query = "select * from " + tableName;
 				try {
 					PreparedStatement ps = this.connection.prepareStatement(query);

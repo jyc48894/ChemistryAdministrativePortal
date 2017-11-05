@@ -8,7 +8,6 @@
 <title>Admin Home</title>
 </head>
 <body>
-
 <div class="container">
   <div class="header">
   	<img src="IMG/ChemLogo.png">
@@ -23,7 +22,7 @@
           </div>
         </div>
       </a>
-      <a href="CoursesServlet">
+      <a href="CourseServlet">
         <div class="smallTable2" id="hoverEvent">
           <div class="smallTableContent">
             Courses
@@ -40,8 +39,5 @@
     </div>
   </div>
 </div>
-
-
-
 </body>
 </html>

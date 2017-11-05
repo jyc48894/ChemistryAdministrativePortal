@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="CSS/tablestyles.css">
 <title>Table View</title>
 <link href="CSS/tableexport.css" rel="stylesheet">
-
-
 </head>
 <body>
 <div class="container">
@@ -22,15 +20,12 @@
 		</div>		
 	</div>
 </div>
-
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
 <script src="JS/FileSaver.min.js"></script>
 <script src="JS/xlsx.core.min.js"></script>
 <script src="JS/tableexport.js"></script>
 <script>
-$("#table").tableExport({formats: ["xlsx","xls", "csv", "txt"], ignoreCols: [6,7],    });
+$("#table").tableExport({formats: ["xlsx","xls", "csv", "txt"], ignoreCols: [document.getElementById('table').rows[0].cells.length-2,document.getElementById('table').rows[0].cells.length-1],    });
 </script>
-
 </body>
 </html>
