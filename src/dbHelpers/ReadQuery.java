@@ -103,12 +103,12 @@ public class ReadQuery {
 			
 			table += "</table>";
 			//Think about how to pass parameters to send user to a correct add page
-			try {
-				table += "<a href='add.jsp'>Add</a> a " + rsmd.getTableName(1) + " entry";
-			} catch (SQLException e) {
+			//try {
+				//Figure this out with after jquery stuff later table += "<a href='add.jsp'>Add</a> a " + rsmd.getTableName(1) + " entry";
+			//} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			//	e.printStackTrace();
+			//}
 			
 			return table;
 		}
