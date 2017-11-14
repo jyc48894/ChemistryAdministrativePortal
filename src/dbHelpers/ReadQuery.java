@@ -22,6 +22,7 @@ public class ReadQuery {
 			// set up the driver
 			try {
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
+				//PUT YOUR LOGIN CREDENTIALS HERE
 				this.connection = DriverManager.getConnection(url, "root", "root");
 				
 			} catch (InstantiationException e) {
@@ -92,6 +93,7 @@ public class ReadQuery {
 					for(int i =1; i <= columnCount; i++) {
 						table += "<td>" + results.getString(i) + "</td>";
 					}
+					
 					//TODO add in parameters for update page and delete functionality (delete will call DeleteServlet that forwards back to ReadServlet
 					table += "<td><a href='update.jsp'>Update</a>";
 					table += "<td><a href='DeleteServlet'>Delete</a>";
@@ -113,5 +115,11 @@ public class ReadQuery {
 			//}
 			
 			return table;
+		}
+		/**
+		 * @return the rsmd
+		 */
+		public ResultSetMetaData getRsmd() {
+			return rsmd;
 		}
 }
