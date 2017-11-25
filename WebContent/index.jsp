@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="CSS/styles.css">
-<title>Chemistry Administrative Login</title>
+<title>Chemistry Administrative Login!</title>
 </head>
 <body>
 <div class="container">
